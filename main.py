@@ -196,6 +196,10 @@ class ChangeTool(QMainWindow, MainWindow.Ui_MainWindow):
             self.output_text.setText(text)
 
     def btn_url_decode_clicked(self):
+        """
+
+        :return:
+        """
         text = self.input_text.toPlainText()
         if text:
             text = urllib.parse.unquote(text, encoding='utf-8')
